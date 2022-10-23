@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="AI2202"
+          fetch="https://github.com/AI2202"
+          sync-c="true"
+          sync-tags="false"
+          revision="topaz" />
+
+  <!-- Device -->
+  <project name="device_asus_davinci" path="device/asus/davinci" remote="AI2202" />
+
+  <!-- Kernel -->
+  <project name="kernel_platform_msm-kernel" path="kernel_platform/msm-kernel" remote="AI2202" >
+    <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
+  </project>
+
+  <!-- Kernel (DTS) -->
+  <project name="kernel_qcom_proprietary" path="kernel_platform/qcom/proprietary" remote="AI2202" >
+    <linkfile dest="kernel_platform/msm-kernel/arch/arm64/boot/dts/vendor" src="devicetree" />
+  </project>
+  <project name="AOSPA/vendor_qcom_proprietary_audio-devicetree" path="vendor/qcom/proprietary/audio-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_camera-devicetree" path="vendor/qcom/proprietary/camera-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_cvp-devicetree" path="vendor/qcom/proprietary/cvp-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_display-devicetree" path="vendor/qcom/proprietary/display-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="vendor/qcom/proprietary/mmrm-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="vendor/qcom/proprietary/video-devicetree" remote="aospa" revision="topaz-asus-davinci" />
+
+  <project name="AOSPA/vendor_qcom_opensource_camera-kernel" path="vendor/qcom/opensource/camera-kernel" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_display-drivers" path="vendor/qcom/opensource/display-drivers" remote="aospa" revision="topaz-asus-davinci" />
+  <project name="AOSPA/vendor_qcom_opensource_audio-kernel-ar" path="vendor/qcom/opensource/audio-kernel" remote="aospa" revision="topaz-asus-davinci" />
+
+</manifest>
