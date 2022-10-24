@@ -16,10 +16,10 @@
 
   <!-- HALs -->
   <project name="AOSPA/android_hardware_qcom_audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aospa" revision="topaz-8450" />
+  <project name="AOSPA/android_hardware_qcom_display" path="hardware/qcom/display" remote="aospa" revision="topaz-8450" />
+  <project name="AOSPA/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="aospa" revision="topaz-8450" />
+  <project name="AOSPA/android_hardware_qcom_media" path="hardware/qcom/media" remote="aospa" revision="topaz-8450" />
   <project name="AOSPA/android_vendor_qcom_opensource_arpal-lx" path="vendor/qcom/opensource/pal" remote="aospa" revision="topaz-8450" />
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="refs/tags/DISPLAY.LA.2.0.r1-08000-WAIPIO.0" />
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="refs/tags/LA.VENDOR.1.0.r1-14200-WAIPIO.QSSI13.0" />
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="refs/tags/LA.VENDOR.1.0.r1-14200-WAIPIO.QSSI13.0" />
 
   <!-- DLKM -->
   <project name="kernel/common" path="kernel_platform/common" remote="clo_kernel_waipio" />
